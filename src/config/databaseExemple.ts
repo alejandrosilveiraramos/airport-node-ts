@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { Airport } from '../model/airports';
+import { Airport } from '../model/airportsModel';
 
 const AppDataSource = new DataSource({
     type: 'oracle',
