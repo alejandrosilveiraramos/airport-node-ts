@@ -16,6 +16,9 @@ AppDataSource.initialize().then(() => {
     // Routes CRUD --Start
     app.post('/airport', new AirportController().create);
     app.get('/airport/:id', new AirportController().read);
+    app.put('/airport/:id', new AirportController().update);
+    app.delete('/airport/:id', new AirportController().delete);
+    app.get('/airport', new AirportController().readAll);
     // Routes CRUD --End
     
 
